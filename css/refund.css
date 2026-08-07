@@ -1,0 +1,636 @@
+/* ===================================
+   REFUND PAGE
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f9ff;
+
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.refund-hero{
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #eef8ff,
+        #dff4ff
+    );
+
+    padding:90px 20px;
+
+    text-align:center;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+.refund-logo{
+
+    width:200px;
+
+    height:auto;
+
+    margin:0 auto 30px;
+
+    display:block;
+
+}
+
+.refund-hero h1{
+
+    font-size:48px;
+
+    color:#17325C;
+
+    margin-bottom:20px;
+
+}
+
+.refund-hero p{
+
+    font-size:18px;
+
+    color:#667085;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/* ====================================
+   NAVBAR
+==================================== */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+
+    width:100%;
+
+    height:72px;
+
+    background:#00BBFA;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 70px;
+
+    z-index:999;
+
+}
+
+.logo img{
+
+    height:50px;
+
+    width:auto;
+
+    display:block;
+
+}
+
+/* ====================================
+   REFUND FORM
+==================================== */
+
+.refund-form-section{
+
+    padding:70px 20px 100px;
+
+}
+
+.refund-form-container{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.form-title{
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:#17325C;
+
+    margin-bottom:40px;
+
+}
+
+/* ====================================
+   FORM SECTIONS
+==================================== */
+
+.section-title{
+
+    font-size:26px;
+
+    color:#17325C;
+
+    margin-bottom:30px;
+
+    padding-bottom:15px;
+
+    border-bottom:2px solid #edf4fb;
+
+}
+
+/* ====================================
+   FORM GRID
+==================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+/* ====================================
+   INPUTS
+==================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    font-weight:600;
+
+    color:#17325C;
+
+    margin-bottom:10px;
+
+}
+
+.input-group label span{
+
+    color:#ff3b30;
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    height:55px;
+
+    border:2px solid #d9e8f7;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group textarea{
+
+    min-height:120px;
+
+    padding:15px;
+
+    resize:vertical;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#00BBFA;
+
+    box-shadow:0 0 0 4px rgba(0,187,250,.15);
+
+}
+
+/* ===================================
+   SELECT BOXES
+=================================== */
+
+.input-group select{
+
+    width:100%;
+
+    height:55px;
+
+    border:2px solid #d9e8f7;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    font-size:16px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+}
+
+/* ===================================
+   AMOUNT BOX
+=================================== */
+
+.amount-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:2px solid #d9e8f7;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    height:55px;
+
+}
+
+.currency{
+
+    width:60px;
+
+    height:100%;
+
+    background:#eef8ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#0070ba;
+
+    font-weight:700;
+
+    border-right:2px solid #d9e8f7;
+
+}
+
+.amount-box input{
+
+    flex:1;
+
+    border:none;
+
+    padding:0 16px;
+
+    height:100%;
+
+    outline:none;
+
+}
+
+/* ====================================
+   DECLARATION
+==================================== */
+
+.declaration-box{
+
+    background:#f8fbff;
+
+    border:1px solid #d9e8f7;
+
+    border-radius:14px;
+
+    padding:22px;
+
+    margin-top:20px;
+
+}
+
+.checkbox-container{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    cursor:pointer;
+
+}
+
+.checkbox-container input{
+
+    margin-top:10px;
+
+    transform:scale(1.5);
+
+}
+
+.checkbox-container span{
+
+    line-height:1.8;
+
+    color:#4b5563;
+
+    font-size:16px;
+
+}
+
+/* ====================================
+   SECURITY NOTE
+==================================== */
+
+.security-note{
+
+    margin-top:25px;
+
+    background:#eef8ff;
+
+    border-left:5px solid #00BBFA;
+
+    padding:18px 22px;
+
+    border-radius:12px;
+
+    color:#17325C;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/* ====================================
+   SUBMIT BUTTON
+==================================== */
+
+.submit-area{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+.submit-btn{
+
+    background:#00BBFA;
+
+    color:#fff;
+
+    border:none;
+
+    padding:18px 60px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,187,250,.25);
+
+}
+
+.submit-btn:hover{
+
+    background:#0099d5;
+
+    transform:translateY(-3px);
+
+}
+
+/* ====================================
+   FORM MESSAGE
+==================================== */
+
+#formMessage{
+
+    display:none;
+
+    margin-top:25px;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    font-weight:500;
+
+    text-align:center;
+
+}
+
+#formMessage.success{
+
+    display:block;
+
+    background:#e8f9ee;
+
+    color:#146c2e;
+
+    border:1px solid #b7e4c7;
+
+}
+
+#formMessage.error{
+
+    display:block;
+
+    background:#fff1f0;
+
+    color:#b42318;
+
+    border:1px solid #f7b4b0;
+
+}
+
+@media (max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    align-items:center;
+    padding:15px;
+}
+
+.nav-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    margin-top:15px;
+}
+
+.nav-links li{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+/* ===========================
+   SUCCESS POPUP
+=========================== */
+
+.popup-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-overlay.show{
+    display:flex;
+}
+
+.popup-box{
+    background:#fff;
+    width:90%;
+    max-width:520px;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    animation:popup .3s ease;
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+.popup-logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.popup-logo img{
+    width:180px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+
+.popup-box h2{
+    color:#17325C;
+    margin-bottom:20px;
+}
+
+.popup-details{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin:25px 0;
+}
+
+.popup-details div{
+    background:#f4f8ff;
+    padding:15px;
+    border-radius:10px;
+}
+
+.popup-message{
+    line-height:1.7;
+    color:#555;
+}
+
+.popup-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.copy-btn,
+.close-btn{
+
+    border:none;
+    padding:14px 28px;
+    border-radius:40px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.copy-btn{
+    background:#00BBFA;
+    color:white;
+}
+
+.close-btn{
+    background:#e5e5e5;
+}
+
+.copy-btn:hover{
+    background:#009ad1;
+}
+
+

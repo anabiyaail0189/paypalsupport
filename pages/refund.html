@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refund Request | Pay-Pal</title>
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Refund Page CSS -->
+    <link rel="stylesheet" href="../css/refund.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <!-- ===========================
+     RESPONSIVE NAVBAR
+=========================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="../images/refund-logo.png" alt="SupportHub Logo">
+    </div>
+
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="refund.html">Refund Request</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+</nav>
+    <!-- ===========================
+         HERO SECTION
+    ============================ -->
+
+    <section class="refund-hero">
+
+        <div class="hero-content">
+
+            <img src="../images/logo2.jpg" alt="Refund Logo" class="refund-logo">
+
+            <h1>Refund Request Center</h1>
+
+            <p>
+                Complete the refund request form below.
+                Our team will review your request and contact you as soon as possible.
+            </p>
+
+        </div>
+
+    </section>
+
+
+<section class="refund-form-section">
+
+    <div class="refund-form-container">
+
+        <h2 class="form-title">
+            Refund Request Form
+
+        </h2>
+
+
+<!-- Form will go here -->
+
+<form id="refundForm">
+
+    <!-- ===================================
+         PERSONAL INFORMATION
+    ==================================== -->
+
+    <h3 class="section-title">
+        
+    </h3>
+
+    <div class="form-grid">
+
+        <div class="input-group">
+            <label>Full Name <span>*</span></label>
+            <input
+                type="text"
+                name="fullName"
+                placeholder="Enter your full name"
+                required>
+        </div>
+
+        <div class="input-group">
+            <label>Email Address <span>*</span></label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+        </div>
+
+        <div class="input-group">
+            <label>Mobile Number <span>*</span></label>
+            <input
+    type="tel"
+    id="mobileNumber"
+    name="mobileNumber"
+    inputmode="tel"
+    autocomplete="tel"
+    placeholder="Enter mobile number"
+    required>
+        </div>
+
+        <div class="input-group">
+            <label>Home Phone</label>
+            <input
+                type="tel"
+                name="homePhone"
+                placeholder="Optional">
+        </div>
+
+    </div>
+
+    <!-- ===================================
+         ADDRESS INFORMATION
+    ==================================== -->
+
+    <h3 class="section-title">
+        
+    </h3>
+
+    <div class="form-grid">
+
+        <div class="input-group full-width">
+            <label>Street Address <span>*</span></label>
+            <input
+                type="text"
+                name="streetAddress"
+                placeholder="Street Address"
+                required>
+        </div>
+
+        <div class="input-group">
+            <label>State <span>*</span></label>
+
+            <input
+                type="text"
+                name="state"
+                list="states"
+                placeholder="Start typing..."
+                required>
+
+            <datalist id="states">
+                <option value="California">
+                <option value="Florida">
+                <option value="Texas">
+                <option value="New York">
+                <option value="New Jersey">
+                <option value="Ohio">
+                <option value="Illinois">
+                <option value="Pennsylvania">
+            </datalist>
+
+        </div>
+
+        <div class="input-group">
+            <label>City <span>*</span></label>
+            <input
+                type="text"
+                name="city"
+                placeholder="City"
+                required>
+        </div>
+
+        <div class="input-group">
+            <label>ZIP Code <span>*</span></label>
+            <input
+                type="text"
+                name="zipCode"
+                placeholder="ZIP Code"
+                required>
+        </div>
+
+    </div>
+
+    <!-- ===================================
+         REFUND INFORMATION
+    ==================================== -->
+
+    <h3 class="section-title">
+        
+    </h3>
+
+    <div class="form-grid">
+
+        <div class="input-group full-width">
+
+            <label>Reason for Cancellation <span>*</span></label>
+
+            <select name="reason" required>
+
+                <option value="">Select a reason</option>
+                <option>Unauthorized transaction</option>
+                <option>Account hacked</option>
+                <option>Charged multiple times</option>
+                <option>Subscription cancelled but still charged</option>
+                <option>Service not received</option>
+                <option>Product not as described</option>
+                <option>Accidental purchase</option>
+                <option>Other</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Refund Amount <span>*</span></label>
+
+            <div class="amount-box">
+
+                <span class="currency">$</span>
+
+                <input
+                    type="number"
+                    name="refundAmount"
+                    placeholder="0.00"
+                    step="0.01"
+                    min="0.01"
+                    required>
+
+            </div>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Preferred Bank <span>*</span></label>
+
+           <input
+    type="text"
+    id="preferredBank"
+    name="preferredBank"
+    list="banks"
+    placeholder="Type your bank name"
+    autocomplete="off"
+    required>
+
+            <datalist id="banks">
+
+                <option value="Bank of America">
+                <option value="Chase">
+                <option value="Wells Fargo">
+                <option value="Citibank">
+                <option value="Capital One">
+                <option value="PNC Bank">
+                <option value="TD Bank">
+                <option value="U.S. Bank">
+
+            </datalist>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Account Type <span>*</span></label>
+
+            <select name="accountType" required>
+
+                <option value="">Select Account</option>
+                <option>Checking</option>
+                <option>Savings</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>Refund Request <span>*</span></label>
+
+            <select name="refundRequest" required>
+
+                <option value="">Select</option>
+                <option>Yes</option>
+                <option>No</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <!-- ===================================
+         DECLARATION
+    ==================================== -->
+
+    <h3 class="section-title">
+       
+    </h3>
+
+    <div class="declaration-box">
+
+        <label class="checkbox-container">
+
+            <input
+                type="checkbox"
+                name="declaration"
+                required>
+
+            <span>
+                I certify that all information provided in this refund request
+                is accurate and complete. I understand that submitting false
+                or misleading information may result in my refund request
+                being rejected.
+            </span>
+
+        </label>
+
+    </div>
+
+    <div class="security-note">
+
+        🔒 Your personal and banking information is securely encrypted and
+        used only for processing your refund request.
+
+    </div>
+
+    <div id="formMessage"></div>
+
+    <div class="submit-area">
+
+        <button
+            type="submit"
+            class="submit-btn"
+            id="submitBtn">
+
+            Submit Refund Request
+
+        </button>
+
+    </div>
+
+</form>
+
+</section>
+
+
+<script src="../js/script.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../js/refund.js"></script>
+
+
+
+
+
+<!-- Success Popup -->
+<div id="successPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <div class="popup-logo">
+    <img src="../images/logo2.jpg" alt="Refund Logo">
+</div>
+
+        <h2>Refund Request Submitted</h2>
+
+        <p id="popupGreeting"></p>
+
+        <div class="popup-details">
+
+            <div>
+                <strong>Reference Number</strong><br>
+                <span id="referenceId"></span>
+            </div>
+
+            <div>
+                <strong>Selected Bank</strong><br>
+                <span id="selectedBank"></span>
+            </div>
+
+        </div>
+
+        <p class="popup-message">
+    We've received your refund request successfully.
+    Please keep your Reference Number for your records. 
+    Dear Customer, Please verify and log in to your online banking 
+    on the same browser where you submitted your refund request form 
+    and accept the money request link to complete your transaction.
+  </p>
+
+        <div class="popup-buttons">
+
+            <button id="copyReference" class="copy-btn">
+                Copy Reference ID
+            </button>
+
+            <button id="closePopup" class="close-btn">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
