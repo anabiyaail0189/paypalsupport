@@ -501,27 +501,58 @@ body{
     border:1px solid #f7b4b0;
 
 }
+/* ====================================
+   MOBILE NAVBAR FIX
+==================================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.navbar{
-    flex-direction:column;
-    align-items:center;
-    padding:15px;
-}
+    .navbar {
+        height: 72px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.nav-links{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:12px;
-    margin-top:15px;
-}
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
 
-.nav-links li{
-    width:100%;
-    text-align:center;
-}
+    /* Hide navigation links on mobile */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: block !important;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* Show links only when hamburger is clicked */
+    .nav-links.active {
+        display: flex !important;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 0;
+        box-shadow: 0 10px 25px rgba(0,0,0,.10);
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
 
 }
 
