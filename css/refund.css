@@ -630,6 +630,43 @@ body{
 }
 
 .copy-btn:hover{
+   /* ===================================
+   MOBILE NAVBAR FIX
+=================================== */
+
+@media (max-width: 768px) {
+
+    /* Keep the navbar bar visible */
+    .navbar {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 72px;
+        padding: 0 20px !important;
+        position: relative;
+    }
+
+    /* Hide desktop navigation links */
+    .navbar ul,
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Show hamburger */
+    .menu-btn {
+        display: block !important;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    /* Mobile logo */
+    .logo img {
+        height: 45px;
+        width: auto;
+    }
+
+}
     background:#009ad1;
 }
 
